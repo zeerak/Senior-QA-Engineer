@@ -1,0 +1,32 @@
+{
+  "name": "saucedemo-playwright-qa",
+  "version": "1.0.0",
+  "description": "Senior QA Engineer real-work challenge: risk-based UI test design and Playwright + TypeScript automation for the SauceDemo (Swag Labs) web shop.",
+  "private": true,
+  "scripts": {
+    "test": "playwright test --project=chromium",
+    "test:all-browsers": "playwright test",
+    "test:smoke": "playwright test --project=chromium --grep @smoke",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.11",
+    "eslint": "^10.15.0",
+    "eslint-plugin-playwright": "^2.12.2",
+    "prettier": "^3.10.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.74.0"
+  }
+}
